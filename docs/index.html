@@ -1,0 +1,31 @@
+<script src="processing.min.js"></script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+
+<br>
+<center>
+<font size="18">
+Homepage for Dr. Harrison
+</font>
+</center>
+<br>
+<br>
+
+<canvas data-processing-sources="sketch.pde"></canvas>
+
+<br>
+<br>
+SageMath Cell:
+<br>
+<br>
+
+<div class="sage">
+	<script type="text/x-sage">
+sines = [plot(sin(2.0*x-c), (-2*pi,2*pi), color=Color(0,0,0), ymin=-1, ymax=1) for c in sxrange(0,4,0.2)]
+animate(sines)
+	</script>
+</div>
+
+<br>
+<a href="2200syllabus.html">2211/2212 syllabus</a> <br>
+<a href="1100syllabus.html">1111/1112 syllabus</a> <br>
