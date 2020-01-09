@@ -23,9 +23,9 @@ void draw(){
     if(k == mouseOscIndex+1) fill(88, 30, 147);
     if(k == mouseOscIndex+2) fill(126, 20, 126);
     double x = k*(width/nOscillators);
-    double y = 80.0*Math.sin(waveNumber*(x - velocity*millis()));
+    double y = 70.0*Math.sin(waveNumber*(x - velocity*millis()));
     if(k > 75) fill(((int) (2.5*(80 + (int) y))));
-    ellipse((int) x, (int) y + 150, 9, 9);
+    ellipse((int) x, (int) y + 20, 9, 9);
   }
 
 }
